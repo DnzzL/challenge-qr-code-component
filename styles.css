@@ -1,50 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 :root {
-    --image-width: 16em;
-    --white: hsl(0, 0%, 100%);
-    --light-gray: hsl(212, 45%, 89%);
-    --grayish-blue: hsl(220, 15%, 55%);
-    --dark-blue: hsl(218, 44%, 22%);
+  --image-width: 16em;
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
 }
 
 body {
-    background-color: var(--light-gray);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    font-family: 'Outfit', sans-serif;
-    font-size: 1em;
+  background-color: var(--light-gray);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Outfit", sans-serif;
+  font-size: 1em;
 }
 
 .card {
-    background-color: var(--white);
-    border-radius: 1.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: fit-content;
-    padding: 0.8em;
+  background-color: var(--white);
+  border-radius: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: fit-content;
+  padding: 0.8em;
 }
 
 .card-image {
-    border-radius: 1.1em;
-    max-width: var(--image-width);
+  border-radius: 1.1em;
+  max-width: var(--image-width);
 }
 
 .card-title {
-    color: var(--dark-blue);
-    font-weight: 700;
-    font-size: 1.2em;
-    max-width: 13em; /* Need to set it lower than --image-width */
-    text-align: center;
-    margin: 1em 0 0 0;
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: 1.2em;
+  max-width: 13em; /* Need to set it lower than --image-width */
+  text-align: center;
+  margin: 1em 0 0 0;
 }
 
 .card-description {
-    color: var(--grayish-blue);
-    font-weight: 400;
-    max-width: var(--image-width);
-    text-align: center;
+  color: var(--grayish-blue);
+  font-weight: 400;
+  max-width: var(--image-width);
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
 }
